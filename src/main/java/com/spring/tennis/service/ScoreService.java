@@ -28,7 +28,7 @@ public class ScoreService {
             String score = isPointDifferenceOne(playerOneScore, playerTwoScore) ? ADVANTAGE : WINS;
             return getHighestScorer(playerOneScore, playerTwoScore) + SPACE + score;
         }
-        return String.format("%s, %s", translateScore(playerOneScore), translateScore(playerTwoScore));
+        return String.format("%s %s", translateScore(playerOneScore), translateScore(playerTwoScore));
     }
 
     private boolean isPointDifferenceOne(int playerOneScore, int playerTwoScore) {
