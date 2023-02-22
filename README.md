@@ -23,9 +23,9 @@
                     or                  
   java -jar build/libs/fizzBuzzV2.jar --server.port=8081
 ```
-- Hit ```http://localhost:8080/updateScore?pointsTo=playerOne``` url to increment the point by 1 for Player one
-- Hit ```http://localhost:8080/updateScore?pointsTo=playerTwo``` url to increment the point by 1 for Player two
-- Hit ```http://localhost:8080/getScore``` url to get the tennis score 
+- Hit ```http://localhost:8080/tennis/updateScore?pointsTo=playerOne``` url to increment the point by 1 for Player one
+- Hit ```http://localhost:8080/tennis/updateScore?pointsTo=playerTwo``` url to increment the point by 1 for Player two
+- Hit ```http://localhost:8080/tennis/getScore``` url to get the tennis score 
 
 ## sample tennis score :
 | Player one points |Player two points|	Output |

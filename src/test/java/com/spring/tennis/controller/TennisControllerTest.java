@@ -26,14 +26,14 @@ public class TennisControllerTest {
 
     @Test
     public void testUpdateScore() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/updateScore?pointsTo=playerOne");
+        RequestBuilder request = MockMvcRequestBuilders.get("/tennis/updateScore?pointsTo=playerOne");
         mockmvc.perform(request)
                 .andExpect(status().isOk());
     }
 
     @Test
     public void testGetScore() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/getScore");
+        RequestBuilder request = MockMvcRequestBuilders.get("/tennis/getScore");
         mockmvc.perform(request)
                 .andExpect(status().isOk());
     }

@@ -4,10 +4,12 @@ import com.spring.tennis.service.PlayerService;
 import com.spring.tennis.service.ScoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/tennis")
 public class TennisController {
 
     @Autowired
